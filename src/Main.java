@@ -32,7 +32,7 @@ public class Main {
         }
         System.out.println("Size Of the Cart:");
         System.out.println(newCart.sizeOfCart());
-        System.out.println("Card Contents:");
+        System.out.println("Cart Contents:");
         newCart.displayCartContents();
 
     }
