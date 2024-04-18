@@ -13,9 +13,11 @@ public class Main {
         if(n==1){
             System.out.println("Enter product name:");
             String productName = sc.next();
+            System.out.println("Enter desired warranty:");
+            String warrantyPeriod = sc.next();
             System.out.println("Enter Manufacturer:");
             String Manufacturer = sc.next();
-            newCart.addElectronics(new Electronics(productName, Manufacturer));
+            newCart.addElectronics(new Electronics(warrantyPeriod,productName, Manufacturer));
 
         } else if (n==2) {
             System.out.println("Enter Brand name:");
