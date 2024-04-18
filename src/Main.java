@@ -12,18 +12,18 @@ public class Main {
         int n = sc.nextInt();
         if(n==1){
             System.out.println("Enter product name:");
-            String productName = sc.nextLine();
+            String productName = sc.next();
             System.out.println("Enter Manufacturer:");
-            String Manufacturer = sc.nextLine();
+            String Manufacturer = sc.next();
             newCart.addElectronics(new Electronics(productName, Manufacturer));
 
         } else if (n==2) {
             System.out.println("Enter Brand name:");
-            String Brand = sc.nextLine();
-            System.out.println("Enter Manufacturer:");
+            String Brand = sc.next();
+            System.out.println("Enter Size:");
             int Size = sc.nextInt();
             System.out.println("Enter Material you want:");
-            String Material = sc.nextLine();
+            String Material = sc.next();
             newCart.addClothing(new Clothing(Brand,Size,Material));
         }else{
             System.out.println("Invalid input!");
