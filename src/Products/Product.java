@@ -14,6 +14,11 @@ public class Product {
         this.price = price;
         this.quantityInStock = quantityInStock;
     }
+
+    public Product(String productName) {
+        this.productName = productName;
+    }
+
     public void displayDetails(){
         System.out.println("ID: "+productId);
         System.out.println("Name: "+productName);

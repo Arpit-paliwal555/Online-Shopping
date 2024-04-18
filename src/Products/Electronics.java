@@ -3,12 +3,13 @@ package Products;
 public class Electronics extends Product{
     String warrantyPeriod;
     String Manufacturer;
-    String PowerRating = "3 star";
-    public Electronics(String warrantyPeriod,String PowerRating ,String Manufacturer){
-        super();
+    String PowerRating;
+    public Electronics(String ProductName,String warrantyPeriod,String Manufacturer){
+        super(ProductName);
         this.warrantyPeriod = warrantyPeriod;
         this.Manufacturer = Manufacturer;
-        this.PowerRating = PowerRating;
+        this.PowerRating = "3 star";
+
     }
 
     @Override
