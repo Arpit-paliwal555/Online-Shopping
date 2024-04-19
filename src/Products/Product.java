@@ -2,7 +2,7 @@ package Products;
 
 public class Product {
     String productName;
-    int productId = 55;
+    public int productId = 55;
     double price = 5000;
     int quantityInStock = 100;
     public Product(){
@@ -15,7 +15,8 @@ public class Product {
         this.quantityInStock = quantityInStock;
     }
 
-    public Product(String productName) {
+    public Product(String productName, int productId) {
+        this.productId = productId;
         this.productName = productName;
     }
 
@@ -25,4 +26,5 @@ public class Product {
         System.out.println("Price: "+price);
         System.out.println("Quantity in Stock: "+quantityInStock);
     }
+
 }

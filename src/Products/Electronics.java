@@ -4,8 +4,11 @@ public class Electronics extends Product{
     String warrantyPeriod;
     String Manufacturer;
     String PowerRating;
-    public Electronics(String ProductName,String warrantyPeriod,String Manufacturer){
-        super(ProductName);
+    public Electronics (String ProductName,int productId, String warrantyPeriod, String Manufacturer) throws IllegalArgumentException{
+        super(ProductName, productId);
+        if (ProductName.isEmpty() || warrantyPeriod.isEmpty()|| Manufacturer.isEmpty()){
+            throw new IllegalArgumentException("Empty Args!");
+        }
         this.warrantyPeriod = warrantyPeriod;
         this.Manufacturer = Manufacturer;
         this.PowerRating = "3 star";
